@@ -1,4 +1,4 @@
-package solutions
+package main
 
 func MoveZeroes(nums []int) {
 	var j int
@@ -11,4 +11,12 @@ func MoveZeroes(nums []int) {
 			nums[i], nums[j] = nums[j], nums[i]
 		}
 	}
+}
+
+func main() {
+
+	// 283. Move zeroes
+	var nums = []int{2, 7, 11, 15}
+	MoveZeroes(nums)
+
 }

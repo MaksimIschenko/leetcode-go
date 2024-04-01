@@ -1,4 +1,8 @@
-package solutions
+package main
+
+import (
+	"fmt"
+)
 
 func RomanToInt(s string) int {
 
@@ -25,4 +29,11 @@ func RomanToInt(s string) int {
 		previos = current
 	}
 	return result
+}
+
+func main() {
+	// 13. Roman to Integer
+	var romanNumber string = "MCMXCIV"
+	result := RomanToInt(romanNumber)
+	fmt.Println(result)
 }

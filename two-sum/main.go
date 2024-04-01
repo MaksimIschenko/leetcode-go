@@ -1,4 +1,4 @@
-package solutions
+package main
 
 func TwoSum(nums []int, target int) []int {
 
@@ -13,4 +13,12 @@ func TwoSum(nums []int, target int) []int {
 		}
 	}
 	return []int{}
+}
+
+func main() {
+	var nums = []int{2, 7, 11, 15}
+	// 1. Two sum
+	var target int = 9
+	TwoSum(nums, target)
+
 }
